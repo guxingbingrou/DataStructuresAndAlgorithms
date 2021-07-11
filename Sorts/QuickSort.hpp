@@ -28,9 +28,10 @@ private:
                 }
                 if (i >= j)
                     break;
-                T temp = data[j];
-                data[j] = data[i];
-                data[i] = temp;
+                Sort<T>::SwapData(data[i], data[j]);
+                // T temp = data[j];
+                // data[j] = data[i];
+                // data[i] = temp;
                 ++i;
 
                 while (i < j && data[i] <= base)
@@ -39,10 +40,10 @@ private:
                 }
                 if (i >= j)
                     break;
-
-                temp = data[j];
-                data[j] = data[i];
-                data[i] = temp;
+                Sort<T>::SwapData(data[i], data[j]);
+                // temp = data[j];
+                // data[j] = data[i];
+                // data[i] = temp;
                 --j;
             }
             DoSort(data, 0, i-1);
