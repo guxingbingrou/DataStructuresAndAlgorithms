@@ -14,10 +14,6 @@ public:
             for(int j=0; j<data.size()-i-1; ++j){
                 if(data[j] > data[j+1]){
                     Sort<T>::SwapData(data[j], data[j+1]);
-                    // T temp = data[j];
-                    // data[j] = data[j+1];
-                    // data[j+1] = temp;
-
                 }
             }
         }

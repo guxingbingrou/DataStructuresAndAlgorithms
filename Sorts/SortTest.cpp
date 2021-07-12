@@ -1,6 +1,8 @@
 #include "Sort.hpp"
 #include "BubbleSort.hpp"
 #include "QuickSort.hpp"
+#include "InsertionSort.hpp"
+#include "ShellSort.hpp"
 #include <iostream>
 #include <memory>
 #include <sys/time.h>
@@ -27,7 +29,20 @@ int main(){
         std::cout << "QuickSort: " << d << std::endl;
     }
  
- 
- 
+    sort = std::move(std::make_unique<MySort::InsertionSort<int>>());
+    sort->DoSort(data);
+    // gettimeofday(&endSort, nullptr);
+    std::cout << "*********************InsertionSort************************** " << std::endl;
+    for(auto d : data){
+        std::cout << "InsertionSort: " << d << std::endl;
+    }
+
+    sort = std::move(std::make_unique<MySort::ShellSort<int>>());
+    sort->DoSort(data);
+    // gettimeofday(&endSort, nullptr);
+    std::cout << "*********************ShellSort************************** " << std::endl;
+    for(auto d : data){
+        std::cout << "ShellSort: " << d << std::endl;
+    }
     return 0;
 }
