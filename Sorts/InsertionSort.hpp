@@ -10,7 +10,7 @@ public:
     InsertionSort(){}
     ~InsertionSort(){}
     void DoSort(std::vector<T>& data) final{
-        for(int i=i ; i<data.size()-1; ++i){
+        for(int i=1 ; i<data.size(); ++i){
             T current = data[i];
             int preindex = i-1;
             while(preindex>=0 && data[preindex] > current){

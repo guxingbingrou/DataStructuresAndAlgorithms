@@ -10,6 +10,8 @@ public:
     Sort(/* args */){};
     virtual void DoSort(std::vector<T>& data) = 0;
     static void SwapData(T& a, T& b){
+        if(a == b)
+            return;
         a = a + b;
         b = a - b;
         a = a - b;
