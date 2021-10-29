@@ -1,7 +1,7 @@
-#ifndef __MY_SORT_SORT_HPP__
-#define __MY_SORT_SORT_HPP__
+#ifndef __SKY_SORT_SORT_HPP__
+#define __SKY_SORT_SORT_HPP__
 #include <vector>
-namespace MySort{
+namespace SkySort{
 
 template<class T>
 class Sort

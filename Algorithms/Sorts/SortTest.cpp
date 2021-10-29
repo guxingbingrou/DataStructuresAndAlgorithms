@@ -29,7 +29,7 @@ int main(){
     
     std::cout << "*********************BubbleSort************************** " << std::endl;
     resetData(data);
-    std::unique_ptr<MySort::Sort<int>> sort = std::make_unique<MySort::BubbleSort<int>>();
+    std::unique_ptr<SkySort::Sort<int>> sort = std::make_unique<SkySort::BubbleSort<int>>();
     sort->DoSort(data);
     for(auto d : data){
         std::cout << "BubbleSort: " << d << std::endl;
@@ -37,7 +37,7 @@ int main(){
  
     std::cout << "*********************QuickSort************************** " << std::endl;
     resetData(data);
-    sort = std::move(std::make_unique<MySort::QuickSort<int>>());
+    sort = std::move(std::make_unique<SkySort::QuickSort<int>>());
     sort->DoSort(data);
     for(auto d : data){
         std::cout << "QuickSort: " << d << std::endl;
@@ -45,7 +45,7 @@ int main(){
 
     std::cout << "*********************InsertionSort************************** " << std::endl;
     resetData(data);
-    sort = std::move(std::make_unique<MySort::InsertionSort<int>>());
+    sort = std::move(std::make_unique<SkySort::InsertionSort<int>>());
     sort->DoSort(data);
     for(auto d : data){
         std::cout << "InsertionSort: " << d << std::endl;
@@ -54,7 +54,7 @@ int main(){
 
     std::cout << "*********************ShellSort************************** " << std::endl;
     resetData(data);
-    sort = std::move(std::make_unique<MySort::ShellSort<int>>());
+    sort = std::move(std::make_unique<SkySort::ShellSort<int>>());
     sort->DoSort(data);
     for(auto d : data){
         std::cout << "ShellSort: " << d << std::endl;
@@ -62,7 +62,7 @@ int main(){
 
     std::cout << "*********************SelectionSort************************** " << std::endl;
     resetData(data);
-    sort = std::move(std::make_unique<MySort::SelectionSort<int>>());
+    sort = std::move(std::make_unique<SkySort::SelectionSort<int>>());
     sort->DoSort(data);
     for(auto d : data){
         std::cout << "SelectionSort: " << d << std::endl;

@@ -1,9 +1,9 @@
-#ifndef __MY_SORT_SELECTION_SORT_HPP__
-#define __MY_SORT_SELECTION_SORT_HPP__
+#ifndef __SKY_SORT_SELECTION_SORT_HPP__
+#define __SKY_SORT_SELECTION_SORT_HPP__
 
 #include "Sort.hpp"
 
-namespace MySort{
+namespace SkySort{
 
 template<class T>
 class SelectionSort : public Sort<T>{
